@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dori.dangeralert.Account_Settings">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/nameview"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/nameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/nameText"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/nameview"
+        android:layout_toEndOf="@+id/nameview"
+        android:editable="true"
+        android:text="Alert Test" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernameText"
+        android:layout_below="@+id/nameText"
+        android:layout_toRightOf="@+id/userNameView"
+        android:layout_toEndOf="@+id/userNameView"
+        android:editable="true"
+        android:text="alerttest102" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName:"
+        android:id="@+id/userNameView"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/usernameText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:id="@+id/emailView"
+        android:textSize="20dp"
+        android:layout_alignBottom="@+id/emailText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/emailText"
+        android:layout_below="@+id/usernameText"
+        android:layout_toRightOf="@+id/emailView"
+        android:layout_toEndOf="@+id/emailView"
+        android:editable="true"
+        android:text="alerttest@alert.com" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password Change Request"
+        android:id="@+id/changePasswordButton"
+        android:layout_below="@+id/emailText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danger Word:"
+        android:id="@+id/dangerWordView"
+        android:textSize="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/changePasswordButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/dangerWordText"
+        android:editable="true"
+        android:layout_alignTop="@+id/dangerWordView"
+        android:layout_toRightOf="@+id/dangerWordView"
+        android:layout_toEndOf="@+id/dangerWordView"
+        android:text="Alert" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Services"
+        android:id="@+id/locationServiceSwitch"
+        android:layout_below="@+id/dangerWordText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="43dp"
+        android:checked="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+
+</RelativeLayout>
