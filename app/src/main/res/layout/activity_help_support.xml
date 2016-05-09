@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="For Help and Support, please contact us at 949-222-222 or at info@dangeralert.com. "
+        android:text="For Help and Support, please contact us at 949-222-222 or at info@failsafe.com. "
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"

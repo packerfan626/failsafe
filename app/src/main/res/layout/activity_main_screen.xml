@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="dori.dangeralert.MainScreen"
-    android:background="#e33131">
+    android:background="#61b7f9">
 
 
     <Button
@@ -16,21 +16,24 @@
         android:layout_height="150dp"
         android:text="ACTIVATE DangerAlert"
         android:id="@+id/danger_button"
-        android:layout_marginTop="97dp"
+        android:layout_marginTop="95dp"
         android:clickable="true"
         android:textSize="30dp"
+        android:background="#efebe9"
         android:layout_below="@+id/settings_button"
-        android:layout_centerHorizontal="true"
-        android:background="#bcbcbc" />
+        android:layout_alignLeft="@+id/view_button"
+        android:layout_alignStart="@+id/view_button" />
 
     <Button
         android:layout_width="250dp"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:text="View Nearby Alerts"
         android:id="@+id/view_button"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="68dp"
         android:maxHeight="60dp"
         android:clickable="true"
+        android:background="#efebe9"
+        android:textSize="25dp"
         android:layout_below="@+id/danger_button"
         android:layout_centerHorizontal="true" />
 
@@ -42,6 +45,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:onClick="openSettings"/>
+        android:onClick="openSettings"
+        android:background="#efebe9" />
 
 </RelativeLayout>

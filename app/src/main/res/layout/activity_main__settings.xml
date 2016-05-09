@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="dori.dangeralert.Main_Settings">
+    tools:context="dori.dangeralert.Main_Settings"
+    android:background="#61b7f9">
 
     <ListView
         android:layout_width="wrap_content"
@@ -26,7 +27,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/listView"
-        android:layout_alignEnd="@+id/listView" />
+        android:layout_alignEnd="@+id/listView"
+        android:textSize="25dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -37,7 +39,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/listView"
-        android:layout_alignEnd="@+id/listView" />
+        android:layout_alignEnd="@+id/listView"
+        android:textSize="25dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -49,6 +52,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="58dp"
         android:layout_alignRight="@+id/listView"
-        android:layout_alignEnd="@+id/listView" />
+        android:layout_alignEnd="@+id/listView"
+        android:textSize="25dp" />
 
 </RelativeLayout>

@@ -74,8 +74,13 @@ public class ViewMap extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney, Australia, and move the camera.
-        LatLng latlng = new LatLng(33.6405, -117.8443);
+        //UCI Location
+//        LatLng latlng = new LatLng(33.6405, -117.8443);
+//        mMap.addMarker(new MarkerOptions().position(latlng).title("Current Location"));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latlng, 14.0f));
+
+        //Current Location
+        LatLng latlng = new LatLng(currentLatitude, currentLongitude);
         mMap.addMarker(new MarkerOptions().position(latlng).title("Current Location"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latlng, 14.0f));
         addCircleToMap();
@@ -89,14 +94,15 @@ public class ViewMap extends FragmentActivity implements OnMapReadyCallback {
         int radiusM = 1609;// your radius in meters
         double latitude = 33.6405;// your center latitude
         double longitude = -117.8443;// your center longitude
-                LatLng latLng = new LatLng(latitude,longitude);
-
+                //LatLng latLng = new LatLng(latitude,longitude);              //uci location
+                LatLng latLng = new LatLng(currentLatitude, currentLongitude); //currentLocation
         // draw circle
         int d = 500; // diameter
         Bitmap bm = Bitmap.createBitmap(d, d, Bitmap.Config.ARGB_8888);
         Canvas c = new Canvas(bm);
         Paint p = new Paint();
         c.drawCircle(d / 2, d / 2, d / 2, p);
+
 
         // generate BitmapDescriptor from circle Bitmap
         BitmapDescriptor bmD = BitmapDescriptorFactory.fromBitmap(bm);
@@ -105,7 +111,7 @@ public class ViewMap extends FragmentActivity implements OnMapReadyCallback {
         mMap.addGroundOverlay(new GroundOverlayOptions().
                 image(bmD).
                 position(latLng,radiusM*2,radiusM*2).
-                transparency(0.4f));
+                transparency(0.8f));
     }
 }
 
